@@ -13,3 +13,5 @@ C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0._1.Properties.Re
 C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.csproj.GenerateResource.Cache
 C:\Users\Luís\Dropbox\College\2º ano - 2º semestre\LAB3\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
 C:\Users\Luís\Dropbox\College\2º ano - 2º semestre\LAB3\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
+C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
+C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb

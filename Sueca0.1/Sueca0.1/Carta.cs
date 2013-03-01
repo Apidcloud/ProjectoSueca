@@ -32,10 +32,7 @@ namespace Sueca0._1
             this.rank = rank;
         }
 
-        //public Carta[] criaBaralho()
-        //{
-        //    throw new System.NotImplementedException();
-        //}
+   
 
         
 
