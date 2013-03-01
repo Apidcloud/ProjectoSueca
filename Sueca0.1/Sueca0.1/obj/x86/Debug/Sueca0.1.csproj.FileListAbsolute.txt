@@ -1,0 +1,15 @@
+C:\Users\gian\Documents\Visual Studio 2010\Projects\Sueca0.1\Sueca0.1\bin\Debug\Sueca0.1.exe
+C:\Users\gian\Documents\Visual Studio 2010\Projects\Sueca0.1\Sueca0.1\bin\Debug\Sueca0.1.pdb
+C:\Users\gian\Documents\Visual Studio 2010\Projects\Sueca0.1\Sueca0.1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\gian\Documents\Visual Studio 2010\Projects\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0._1.Properties.Resources.resources
+C:\Users\gian\Documents\Visual Studio 2010\Projects\Sueca0.1\Sueca0.1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\gian\Documents\Visual Studio 2010\Projects\Sueca0.1\Sueca0.1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\gian\Documents\Visual Studio 2010\Projects\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
+C:\Users\gian\Documents\Visual Studio 2010\Projects\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
+C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
+C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
+C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.csprojResolveAssemblyReference.cache
+C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0._1.Properties.Resources.resources
+C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.csproj.GenerateResource.Cache
+C:\Users\Luís\Dropbox\College\2º ano - 2º semestre\LAB3\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
+C:\Users\Luís\Dropbox\College\2º ano - 2º semestre\LAB3\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
