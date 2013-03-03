@@ -2,37 +2,38 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SuecaLibrary;
 
 namespace Sueca0._1
 {
-    class Partida
+    public class Partida
     {
         public Carta trunfo{ get; set; }
         public List<Vaza> vazas{ get; set; }
         public int numVazas { get; set; }
-        public List<Carta> baralho { get; set; }
+        public Baralho baralho { get; set; }
 
         public Partida()
         {
             this.vazas = new List<Vaza>();
             this.trunfo = new Carta(NAIPE.nenhum, -1, -1, -1);
-            this.baralho = new List<Carta>();
+            this.baralho = new Baralho();
         }
 
 
-        public Partida(List<Carta> baralho)
+        public Partida(Baralho baralho)
         {
-            this.baralho = new List<Carta>();
+            this.baralho = new Baralho();
             this.vazas = new List<Vaza>();
             this.trunfo = new Carta(NAIPE.nenhum, -1, -1, -1);
-            copiaBaralho(baralho);
+            copiaBaralho(this.baralho);
         }
 
-        private void copiaBaralho(List<Carta> baralho)
+        private void copiaBaralho(Baralho baralho)
         {
-            foreach (Carta carta in baralho)
+            for (int i = 0; i < baralho.Count(); i++)
             {
-                Carta aux = carta;
+                Carta aux = baralho[i];
                 this.baralho.Add(aux);
             }
         }
@@ -46,10 +47,7 @@ namespace Sueca0._1
             darCartas();
             for (numVazas = 0; numVazas < 10;numVazas++)
             {
-                //Vaza vaza = new Vaza();
-                //vazas.Add(vaza);
-                //vaza.efetuaJogada();
-                //vaza.Maior;
+                
             } 
         }
 

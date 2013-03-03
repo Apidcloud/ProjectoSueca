@@ -15,5 +15,11 @@ namespace Sueca0._1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Jogo oJogo = new Jogo();
+            
+        }
     }
 }
