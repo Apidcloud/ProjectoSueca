@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Sueca0._1
 {
-    class Equipa
+    public class Equipa
     {
         private Jogador[] jogadores;
 

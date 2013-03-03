@@ -8,3 +8,5 @@ C:\Users\gian\Documents\Visual Studio 2010\Projects\Sueca0.1\Sueca0.1\obj\x86\De
 C:\Users\gian\Documents\Visual Studio 2010\Projects\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
 C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
 C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
+C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
+C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
