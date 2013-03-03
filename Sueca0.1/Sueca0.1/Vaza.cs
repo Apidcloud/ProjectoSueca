@@ -19,7 +19,7 @@ namespace Sueca0._1
         public Vaza() {
             this.jogadas = new List<Jogada>();
             this.pontosVaza = 0;
-           
+            this.contaJogadas = 0;
         }
 
         // construtor por parâmetros

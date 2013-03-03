@@ -1,29 +1,27 @@
-﻿using System;
+﻿using SuecaLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace Sueca0._1
 {
-    class Jogo
+    public class Jogo
     {
+
         public Equipa[] equipas { get; set; }
-
-        public List<Carta> baralho { get; set; }
-
+        public Baralho baralho { get; set; }
         public Partida[] partidas { get; set; }
 
         public Jogo()
         {
             this.equipas = new Equipa[2];
-            this.baralho = new List<Carta>();
             this.partidas = new Partida[4];
+            criarBaralho();
         }
-        public void criarBaralho()
+        private void criarBaralho()
         {
-            // lêr xml
-            // Carta newCarta = new Carta(informação_lida do xml);
-            // this.baralho.add(newCarta);
+            this.baralho = (Baralho)(SerializeData.DeserializeObject("deck.bin"));
         }
 
         public void iniciarjogo()

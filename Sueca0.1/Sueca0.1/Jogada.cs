@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Sueca0._1
 {
-    class Jogada
+    public class Jogada
     {
         public Jogador jogador { get; set; }
 
