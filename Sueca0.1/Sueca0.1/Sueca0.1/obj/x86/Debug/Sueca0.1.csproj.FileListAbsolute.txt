@@ -10,3 +10,5 @@ C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
 C:\Users\Luís\Downloads\Sueca0.1\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
 C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
 C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
+C:\Users\oleg\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
+C:\Users\oleg\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
