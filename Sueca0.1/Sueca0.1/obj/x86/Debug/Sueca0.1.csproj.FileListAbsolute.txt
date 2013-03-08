@@ -22,6 +22,6 @@ C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\bin\Debug\Sueca0
 C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\bin\Debug\Sueca0.1.pdb
 C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\bin\Debug\SuecaLibrary.dll
 C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\bin\Debug\SuecaLibrary.pdb
-C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0._1.Form1.resources
 C:\Users\oleg\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.exe
 C:\Users\oleg\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0.1.pdb
+C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\Sueca0.1\obj\x86\Debug\Sueca0._1.FormPrincipal.resources
