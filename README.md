@@ -1,4 +1,4 @@
-## Sueca's Project
+## Sueca's Projects
 =============
 
 ## College's Sueca project (2013)
