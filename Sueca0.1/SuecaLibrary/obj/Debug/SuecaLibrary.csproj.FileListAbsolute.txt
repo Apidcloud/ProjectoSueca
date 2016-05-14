@@ -1,0 +1,5 @@
+C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\SuecaLibrary\bin\Debug\SuecaLibrary.dll
+C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\SuecaLibrary\bin\Debug\SuecaLibrary.pdb
+C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\SuecaLibrary\obj\Debug\SuecaLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\SuecaLibrary\obj\Debug\SuecaLibrary.dll
+C:\Users\Luís\Documents\GitHub\ProjectoSueca\Sueca0.1\SuecaLibrary\obj\Debug\SuecaLibrary.pdb

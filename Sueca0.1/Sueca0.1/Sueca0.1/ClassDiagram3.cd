@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sueca0._1.Carta">
+    <Position X="3" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAACAAAABAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Carta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sueca0._1.Equipa">
+    <Position X="7.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sueca0._1.Form1">
+    <Position X="9.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sueca0._1.Jogada">
+    <Position X="7.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAgAAAQIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jogada.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sueca0._1.Jogador">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Jogador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sueca0._1.JogadorBot">
+    <Position X="0.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>JogadorBot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sueca0._1.JogadorHumano">
+    <Position X="2.75" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>JogadorHumano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sueca0._1.Jogo">
+    <Position X="11.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEAQCAAAAABAAAACAAAAAAAAAAQAAEIAAAAAAABAEAg=</HashCode>
+      <FileName>Jogo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sueca0._1.Program">
+    <Position X="5.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sueca0._1.Vaza">
+    <Position X="9.5" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAhAAAAIAQ=</HashCode>
+      <FileName>Vaza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Sueca0._1.NAIPE">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAUAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Carta.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
