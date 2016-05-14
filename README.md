@@ -1,10 +1,10 @@
 Sueca's Project
 =============
 
-College's Sueca project
+College's Sueca project (2013)
 
-The project basically consists on developing a Sueca's game in 3 different platforms:
-Windows 8, Windows Phone 8, and finally 2nd Life.
+The project basically consisted on developing a Sueca's game in 3 different platforms:
+Windows 8, Windows Phone 8, and finally 2nd Life (opensim).
 
 
 
