@@ -1,0 +1,89 @@
+integer canal=-123456; // canal de comunicação entre objetos
+integer listen_handle;
+
+list Copas = ["d87197de-09ed-433c-9cec-820297466790",
+"bd2329d6-a6c2-4e55-81b3-9763c1538fd2",
+"3ab84530-8008-4759-8551-5121e4b1a8f7",
+"8a2d9f3d-b2b6-408e-a904-7cd97c3c97c4",
+"adc2cb66-b3db-4cb5-9f91-eb76d8ce8b32",
+"2f1b069f-4a3f-486b-9d93-9ac1dbcd4e2c",
+"6afd76a7-bb1b-4e4e-96fa-2a9557a090c0",
+"0addf042-3590-4919-afca-3225ccbdd86f",
+"12dc2ae9-6dec-42fb-ac1a-101bf8d84d2e",
+"998e40ee-cbc1-4c97-8b80-5973ffdaffd7"];
+
+list Espadas = ["abe60d71-1036-4f24-93f4-1b15d094da8e",
+"22488de6-6cc0-4c27-9d39-bc51f1b49e00",
+"9b8ff100-f0e5-477c-902a-bdecdebe84e7",
+"17b96df8-6520-4393-8b72-f7b76c353c90",
+"046b1d0a-a5ac-4be4-8ac4-6d8ac5e60f24",
+"0e27f900-3cef-469a-a1c4-2b95237470ae",
+"9766b7b6-1b5a-4f5a-9917-c0b1cadc6c28",
+"169d5e15-9a08-4022-9365-cad6a098f9cd",
+"9a04575d-d9b8-4c34-a946-fb9c0b3641c0",
+"7f8f187a-dfa1-430c-b098-6f1be82e94fc"];
+
+list Paus = ["e9ecdd20-82f4-4266-ae65-83f96612dfff",
+"8356d502-3074-413c-9da1-29497b223506",
+"663307fd-90dd-4ef7-abce-2cab517091ca",
+"01f8d40c-9dfe-4b49-b013-f6c0721760fc",
+"59e3b32a-d38c-4578-8825-2c97e1f94cd8",
+"3eb05799-4e1d-486c-af9a-856f0e28acaf",
+"9a20f000-a8dd-4bbf-93be-ac453ad9ec16",
+"b976e3e2-1adc-4da1-a2bd-ea64b7793a13",
+"0080ba9c-4e90-476a-a71e-088aba40a92a",
+"d8d51e57-7222-493a-b32e-04c1c806da9e"];
+
+list Ouros = ["e699af8b-b203-49bc-9e79-0b90341d57d1",
+"314bc619-b5ef-4096-a367-ee9b4cbdedc7",
+"bff8c56f-a4b8-4131-a19f-68d255cf573a",
+"f64c7384-6990-4300-9507-40796866b1c6",
+"aeb6f4a4-9ff7-4d14-887b-e1c399aabb04",
+"42ee7f15-4209-4f71-8901-a90648d9833a",
+"ba7908f0-861a-4984-94b1-6adbbb96ec7f",
+"4127d963-4fbe-44a1-a71d-15f3cfa32619",
+"f2e93f2b-40c6-4c25-8063-9bb80c6c4180",
+"98a39f67-8e33-4dd9-9ee8-58906727626c"];
+default
+{
+    state_entry()
+    {   
+        llSetTexture("00000000-0000-2222-3333-100000001007",ALL_SIDES); // textura "clear"
+        listen_handle = llListen(canal, "PlacarJogo", "", ""); // põe-se à escuta apenas de comunicações provenientes do PRIM "PlacarJogo"
+        llInstantMessage( llGetOwner(), "ID:"+  llGetObjectName() +":"+ llGetKey() ); // envia mensagem de identificação ao Owner
+    }
+    on_rez(integer start_param)
+    {
+        // Restarts the script every time the object is rezzed
+        llResetScript(); 
+    }
+    listen( integer channel, string name, key id, string message )
+    {
+        if(channel==canal)
+        {
+            if(message=="disable"){
+                llSetTexture("00000000-0000-2222-3333-100000001007",ALL_SIDES); // textura "clear"
+            }
+            else{
+                integer pos = (integer)llGetSubString(message, -1, -1);
+                string naipe = llGetSubString(message, 0, 3);
+                if(naipe=="copa"){
+                    llSetTexture(llList2String(Copas, pos) ,ALL_SIDES);
+                }
+                if(naipe=="paus"){
+                    llSetTexture(llList2String(Paus, pos) ,ALL_SIDES);
+                }
+                if(naipe=="ouro"){
+                    llSetTexture(llList2String(Ouros, pos) ,ALL_SIDES);
+                }
+                if(naipe=="espa"){
+                    llSetTexture(llList2String(Espadas, pos) ,ALL_SIDES);
+                }
+            }
+        }
+    }
+    touch_start(integer num_detected)
+    {
+        llInstantMessage(llGetOwner(), "CMD:UserChoose:" +  llGetSubString(llGetObjectName(), -1, -1));
+    }
+}

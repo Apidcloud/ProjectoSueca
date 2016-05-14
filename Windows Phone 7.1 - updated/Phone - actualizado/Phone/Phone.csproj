@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D522EE9E-D0D5-4E93-A930-C2E325AF91AD}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Phone</RootNamespace>
+    <AssemblyName>Phone</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Phone.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Phone.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Controllers\GameController.cs" />
+    <Compile Include="Classes\Delegates.cs" />
+    <Compile Include="Classes\Models\BotPlayer.cs" />
+    <Compile Include="Classes\Models\Carta.cs" />
+    <Compile Include="Classes\Models\GameModel.cs" />
+    <Compile Include="Classes\Models\HumanPlayer.cs" />
+    <Compile Include="Classes\Models\IPlayer.cs" />
+    <Compile Include="Classes\Models\Jogada.cs" />
+    <Compile Include="Classes\Models\Partida.cs" />
+    <Compile Include="Classes\Models\Team.cs" />
+    <Compile Include="Classes\Models\Vaza.cs" />
+    <Compile Include="Classes\Utilities\SerializeData.cs" />
+    <Compile Include="Controls\HandUpRight.xaml.cs">
+      <DependentUpon>HandUpRight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryPage.xaml.cs">
+      <DependentUpon>HistoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="JogoPage.xaml.cs">
+      <DependentUpon>JogoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\HandHorizontal.xaml.cs">
+      <DependentUpon>HandHorizontal.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Controls\HandUpRight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HistoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="JogoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\HandHorizontal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\appbar.add.rest.png" />
+    <Content Include="Icons\appbar.back.rest.png" />
+    <Content Include="Icons\appbar.basecircle.rest.png" />
+    <Content Include="Icons\appbar.cancel.rest.png" />
+    <Content Include="Icons\appbar.check.rest.png" />
+    <Content Include="Icons\appbar.close.rest.png" />
+    <Content Include="Icons\appbar.delete.rest.png" />
+    <Content Include="Icons\appbar.download.rest.png" />
+    <Content Include="Icons\appbar.edit.rest.png" />
+    <Content Include="Icons\appbar.favs.addto.rest.png" />
+    <Content Include="Icons\appbar.favs.rest.png" />
+    <Content Include="Icons\appbar.feature.camera.rest.png" />
+    <Content Include="Icons\appbar.feature.email.rest.png" />
+    <Content Include="Icons\appbar.feature.search.rest.png" />
+    <Content Include="Icons\appbar.feature.settings.rest.png" />
+    <Content Include="Icons\appbar.feature.video.rest.png" />
+    <Content Include="Icons\appbar.folder.rest.png" />
+    <Content Include="Icons\appbar.minus.rest.png" />
+    <Content Include="Icons\appbar.new.rest.png" />
+    <Content Include="Icons\appbar.next.rest.png" />
+    <Content Include="Icons\appbar.overflowdots.png" />
+    <Content Include="Icons\appbar.questionmark.rest.png" />
+    <Content Include="Icons\appbar.refresh.rest.png" />
+    <Content Include="Icons\appbar.save.rest.png" />
+    <Content Include="Icons\appbar.share.rest.png" />
+    <Content Include="Icons\appbar.stop.rest.png" />
+    <Content Include="Icons\appbar.sync.rest.png" />
+    <Content Include="Icons\appbar.transport.ff.rest.png" />
+    <Content Include="Icons\appbar.transport.pause.rest.png" />
+    <Content Include="Icons\appbar.transport.play.rest.png" />
+    <Content Include="Icons\appbar.transport.rew.rest.png" />
+    <Content Include="Icons\appbar.upload.rest.png" />
+    <Content Include="Icons\Sueca.png" />
+    <Content Include="icons_dark\appbar.add.rest.png" />
+    <Content Include="icons_dark\appbar.back.rest.png" />
+    <Content Include="icons_dark\appbar.basecircle.rest.png" />
+    <Content Include="icons_dark\appbar.cancel.rest.png" />
+    <Content Include="icons_dark\appbar.check.rest.png" />
+    <Content Include="icons_dark\appbar.close.rest.png" />
+    <Content Include="icons_dark\appbar.delete.rest.png" />
+    <Content Include="icons_dark\appbar.download.rest.png" />
+    <Content Include="icons_dark\appbar.edit.rest.png" />
+    <Content Include="icons_dark\appbar.favs.addto.rest.png" />
+    <Content Include="icons_dark\appbar.favs.rest.png" />
+    <Content Include="icons_dark\appbar.feature.camera.rest.png" />
+    <Content Include="icons_dark\appbar.feature.email.rest.png" />
+    <Content Include="icons_dark\appbar.feature.search.rest.png" />
+    <Content Include="icons_dark\appbar.feature.settings.rest.png" />
+    <Content Include="icons_dark\appbar.feature.video.rest.png" />
+    <Content Include="icons_dark\appbar.folder.rest.png" />
+    <Content Include="icons_dark\appbar.minus.rest.png" />
+    <Content Include="icons_dark\appbar.new.rest.png" />
+    <Content Include="icons_dark\appbar.next.rest.png" />
+    <Content Include="icons_dark\appbar.overflowdots.png" />
+    <Content Include="icons_dark\appbar.questionmark.rest.png" />
+    <Content Include="icons_dark\appbar.refresh.rest.png" />
+    <Content Include="icons_dark\appbar.save.rest.png" />
+    <Content Include="icons_dark\appbar.share.rest.png" />
+    <Content Include="icons_dark\appbar.stop.rest.png" />
+    <Content Include="icons_dark\appbar.sync.rest.png" />
+    <Content Include="icons_dark\appbar.transport.ff.rest.png" />
+    <Content Include="icons_dark\appbar.transport.pause.rest.png" />
+    <Content Include="icons_dark\appbar.transport.play.rest.png" />
+    <Content Include="icons_dark\appbar.transport.rew.rest.png" />
+    <Content Include="icons_dark\appbar.upload.rest.png" />
+    <Content Include="deck.xml" />
+    <Content Include="Resources\Avatars\0.png" />
+    <Content Include="Resources\Avatars\1.png" />
+    <Content Include="Resources\Avatars\2.png" />
+    <Content Include="Resources\Avatars\3.png" />
+    <Content Include="Resources\Cards\backside.png" />
+    <Content Include="Resources\Cards\copas\10.png" />
+    <Content Include="Resources\Cards\copas\11.png" />
+    <Content Include="Resources\Cards\copas\12.png" />
+    <Content Include="Resources\Cards\copas\13.png" />
+    <Content Include="Resources\Cards\copas\14.png" />
+    <Content Include="Resources\Cards\copas\15.png" />
+    <Content Include="Resources\Cards\copas\16.png" />
+    <Content Include="Resources\Cards\copas\17.png" />
+    <Content Include="Resources\Cards\copas\18.png" />
+    <Content Include="Resources\Cards\copas\19.png" />
+    <Content Include="Resources\Cards\espadas\20.png" />
+    <Content Include="Resources\Cards\espadas\21.png" />
+    <Content Include="Resources\Cards\espadas\22.png" />
+    <Content Include="Resources\Cards\espadas\23.png" />
+    <Content Include="Resources\Cards\espadas\24.png" />
+    <Content Include="Resources\Cards\espadas\25.png" />
+    <Content Include="Resources\Cards\espadas\26.png" />
+    <Content Include="Resources\Cards\espadas\27.png" />
+    <Content Include="Resources\Cards\espadas\28.png" />
+    <Content Include="Resources\Cards\espadas\29.png" />
+    <Content Include="Resources\Cards\ouros\0.png" />
+    <Content Include="Resources\Cards\ouros\1.png" />
+    <Content Include="Resources\Cards\ouros\2.png" />
+    <Content Include="Resources\Cards\ouros\3.png" />
+    <Content Include="Resources\Cards\ouros\4.png" />
+    <Content Include="Resources\Cards\ouros\5.png" />
+    <Content Include="Resources\Cards\ouros\6.png" />
+    <Content Include="Resources\Cards\ouros\7.png" />
+    <Content Include="Resources\Cards\ouros\8.png" />
+    <Content Include="Resources\Cards\ouros\9.png" />
+    <Content Include="Resources\Cards\paus\30.png" />
+    <Content Include="Resources\Cards\paus\31.png" />
+    <Content Include="Resources\Cards\paus\32.png" />
+    <Content Include="Resources\Cards\paus\33.png" />
+    <Content Include="Resources\Cards\paus\34.png" />
+    <Content Include="Resources\Cards\paus\35.png" />
+    <Content Include="Resources\Cards\paus\36.png" />
+    <Content Include="Resources\Cards\paus\37.png" />
+    <Content Include="Resources\Cards\paus\38.png" />
+    <Content Include="Resources\Cards\paus\39.png" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
